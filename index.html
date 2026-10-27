@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabide Voador Studio</title>
+<meta name="description" content="Desktop tool that sends the fashion videos edited on your computer to your TikTok drafts.">
+<link rel="icon" href="icone.png">
+<style>
+  :root { --tinta: #1d1a16; --suave: #6b6359; --ouro: #b8892f; --fundo: #faf7f2; --cartao: #ffffff; --linha: #e8e1d6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 Georgia, "Times New Roman", serif; color: var(--tinta); background: var(--fundo); }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+  header img { width: 84px; height: 84px; border-radius: 50%; border: 2px solid var(--ouro); object-fit: cover; }
+  h1 { font-size: 2rem; margin: 0; letter-spacing: .01em; }
+  .sub { color: var(--suave); margin: 2px 0 0; font-style: italic; }
+  h2 { font-size: 1.15rem; margin: 34px 0 10px; color: var(--ouro); text-transform: uppercase; letter-spacing: .08em; font-family: Arial, sans-serif; }
+  .cartao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 20px 24px; }
+  ol { padding-left: 22px; margin: 0; } li { margin: 6px 0; }
+  nav { margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap; font-family: Arial, sans-serif; }
+  nav a { color: var(--tinta); border: 1px solid var(--ouro); border-radius: 999px; padding: 8px 18px; text-decoration: none; }
+  nav a:hover { background: var(--ouro); color: #fff; }
+  footer { margin-top: 40px; color: var(--suave); font-size: .85rem; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icone.png" alt="Cabide Voador logo: a golden hanger with wings">
+    <div>
+      <h1>Cabide Voador Studio</h1>
+      <p class="sub">The fashion-video studio behind the TikTok account @cabidevoador</p>
+    </div>
+  </header>
+
+  <div class="cartao">
+    <p>Cabide Voador Studio is a personal desktop tool (Windows) used by the creator of the TikTok account
+    <strong>@cabidevoador</strong>. It edits short fashion videos on the creator's own computer and sends the finished
+    files to the creator's <strong>TikTok drafts (inbox)</strong>. The creator then opens TikTok, reviews the video,
+    writes the caption, turns on the <em>AI-generated content</em> label and publishes it personally.</p>
+    <p>The app never publishes anything by itself and is used only with the creator's own TikTok account.</p>
+  </div>
+
+  <h2>How it works</h2>
+  <div class="cartao">
+    <ol>
+      <li><strong>Log in with TikTok</strong> (Login Kit): the creator authorizes the app once in the browser.</li>
+      <li><strong>Send to drafts</strong> (Content Posting API, <code>video.upload</code>): the creator picks a finished
+        video and the app uploads it to the TikTok inbox as a draft.</li>
+      <li><strong>Finish in TikTok</strong>: the creator taps the inbox notification, edits, labels AI content and posts.</li>
+      <li><strong>Performance report</strong> (Display API, <code>user.info.stats</code> and <code>video.list</code>):
+        the app reads the views, likes, comments and shares of the creator's own videos to plan the next videos.</li>
+    </ol>
+  </div>
+
+  <h2>Versão em português</h2>
+  <div class="cartao">
+    <p>O Cabide Voador Studio é uma ferramenta pessoal de computador usada pelo criador da conta <strong>@cabidevoador</strong>
+    no TikTok. Ela edita vídeos curtos de moda no próprio computador do criador e envia o arquivo pronto para os
+    <strong>rascunhos (caixa de entrada) do TikTok</strong>. O criador abre o TikTok, revisa, escreve a legenda, liga o
+    rótulo <em>Conteúdo gerado por IA</em> e publica pessoalmente. O app nunca publica sozinho.</p>
+  </div>
+
+  <nav>
+    <a href="termos.html">Terms of Service · Termos de Uso</a>
+    <a href="privacidade.html">Privacy Policy · Política de Privacidade</a>
+  </nav>
+
+  <footer>
+    Contact: glaycondearaujo@gmail.com · Cabide Voador Studio is an independent tool and is not affiliated with, endorsed by or
+    sponsored by TikTok.
+  </footer>
+</main>
+</body>
+</html>
